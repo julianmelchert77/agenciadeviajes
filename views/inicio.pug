@@ -1,0 +1,31 @@
+extends ./layout/index 
+
+block slider 
+    .slider     
+        h1 Río de Janeiro 
+        em aventura
+
+block contenido
+    main.container.mt-5     
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5 
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim tincidunt vehicula. Etiam metus metus, rhoncus ac mauris eget, viverra consequat nisi. Phasellus sed aliquam ipsum. Aliquam at ipsum a ante lacinia condimentum. 
+                p Vivamus pretium a mi non tempus. Nunc orci lacus, vulputate quis ultrices non, tincidunt ut diam. Morbi ultrices euismod porta. Curabitur eu urna a ante laoreet commodo. Integer posuere sodales sem, sed convallis orci tincidunt eget. 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+
+        include ./layout/bloque_viajes
+
+    .descuento  
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Bariloche
+                        p.fecha 20 de Diciembre 2022 - 28 de Diciembre de 2022
+                        p.precio $78.500 ARS
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimonios
